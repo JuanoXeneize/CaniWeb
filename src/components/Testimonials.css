@@ -1,0 +1,34 @@
+.testimonials-section {
+  background-color: var(--bg-secondary);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-author span {
+  font-size: 0.9rem;
+  color: var(--accent-secondary);
+  font-weight: 500;
+}
