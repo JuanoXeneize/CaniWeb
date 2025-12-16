@@ -24,20 +24,20 @@ const Gallery = () => {
         </div>
 
         <div className="gallery-grid">
-          <div className="gallery-item item-1" onClick={() => openModal("/gallery-1.jpg", "Evento corporativo")}>
-            <img src="/gallery-1.jpg" alt="Evento corporativo" />
+          <div className="gallery-item item-1" onClick={() => openModal(`${import.meta.env.BASE_URL}gallery-1.jpg`, "Evento corporativo")}>
+            <img src={`${import.meta.env.BASE_URL}gallery-1.jpg`} alt="Evento corporativo" />
           </div>
-          <div className="gallery-item item-2" onClick={() => openModal("/gallery-2.jpg", "Despedida de año")}>
-            <img src="/gallery-2.jpg" alt="Despedida de año" />
+          <div className="gallery-item item-2" onClick={() => openModal(`${import.meta.env.BASE_URL}gallery-2.jpg`, "Despedida de año")}>
+            <img src={`${import.meta.env.BASE_URL}gallery-2.jpg`} alt="Despedida de año" />
           </div>
-          <div className="gallery-item item-3" onClick={() => openModal("/gallery-3.jpg", "Evento fin de año corporativo")}>
-            <img src="/gallery-3.jpg" alt="Evento fin de año corporativo" />
+          <div className="gallery-item item-3" onClick={() => openModal(`${import.meta.env.BASE_URL}gallery-3.jpg`, "Evento fin de año corporativo")}>
+            <img src={`${import.meta.env.BASE_URL}gallery-3.jpg`} alt="Evento fin de año corporativo" />
           </div>
-          <div className="gallery-item item-4" onClick={() => openModal("/gallery-4.jpg", "Boda en Playa")}>
-            <img src="/gallery-4.jpg" alt="Boda en Playa" />
+          <div className="gallery-item item-4" onClick={() => openModal(`${import.meta.env.BASE_URL}gallery-4.jpg`, "Boda en Playa")}>
+            <img src={`${import.meta.env.BASE_URL}gallery-4.jpg`} alt="Boda en Playa" />
           </div>
-            <div className="gallery-item item-5" onClick={() => openModal("/gallery-5.jpg", "Boda en Playa")}>
-            <img src="/gallery-5.jpg" alt="Interio piso de deck" />
+          <div className="gallery-item item-5" onClick={() => openModal(`${import.meta.env.BASE_URL}gallery-5.jpg`, "Boda en Playa")}>
+            <img src={`${import.meta.env.BASE_URL}gallery-5.jpg`} alt="Interio piso de deck" />
           </div>
 
         </div>

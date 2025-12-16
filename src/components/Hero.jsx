@@ -11,7 +11,7 @@ const Hero = () => {
           muted
           playsInline
         >
-          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}hero-bg.mp4`} type="video/mp4" />
           Tu navegador no soporta video HTML5.
         </video>
 
