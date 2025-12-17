@@ -89,6 +89,9 @@ button {
 
 .section {
   padding: var(--spacing-lg) 0;
+  background-color: var(--bg-primary); /* Ensures content covers the fixed hero video */
+  position: relative;
+  z-index: 1;
 }
 
 .btn {
