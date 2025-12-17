@@ -7,6 +7,8 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import BackToTop from "./components/BackToTop";
+
 function App() {
   const [theme, setTheme] = useState("light");
 
@@ -39,6 +41,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }
