@@ -96,6 +96,7 @@ button {
   background-color: var(--bg-primary); /* Ensures content covers the fixed hero video */
   position: relative;
   z-index: 1;
+  scroll-margin-top: 80px; /* 80px navbar + 20px spacing */
 }
 
 .btn {
