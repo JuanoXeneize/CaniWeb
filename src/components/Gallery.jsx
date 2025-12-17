@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import './Gallery.css';
 
@@ -43,7 +44,7 @@ const Gallery = () => {
         </div>
       </div>
 
-      {selectedImage && (
+      {selectedImage && createPortal(
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeModal}>
@@ -52,7 +53,8 @@ const Gallery = () => {
             <img src={selectedImage.src} alt={selectedImage.alt} />
             <p className="modal-caption">{selectedImage.alt}</p>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   );
