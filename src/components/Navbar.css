@@ -100,4 +100,30 @@
   .nav-links.active {
     transform: translateX(0);
   }
+
+  .social-links-nav {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+}
+
+/* Social Links Styles */
+.social-links-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.social-links-nav a {
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-nav a:hover {
+  color: var(--accent-primary);
+  transform: translateY(-2px);
 }
